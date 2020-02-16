@@ -1,0 +1,39 @@
+.grid {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.grid h1 {
+    border: solid;
+    border-width: 0 0 1px;
+}
+
+.entry  {
+    display: inline-block;
+    padding: 15px;
+}
+
+.entry:hover {
+    background-color: rgb(80, 80, 80);
+    transition: background-color 0.15s linear 0s;
+}
+
+.entry:hover figcaption,
+.entry:focus-within figcaption,
+.entry:focus figcaption {
+    color: white;
+    text-decoration: underline white;
+    transition: text-decoration 0.15s linear;
+}
+
+.entry img {
+    width: 400px;
+}
+
+figcaption {
+    position: relative;
+    width: auto;
+    bottom: 0;
+    text-align: center;
+    font-family: sans-serif;
+}

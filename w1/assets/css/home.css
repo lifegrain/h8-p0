@@ -1,0 +1,51 @@
+#gallery {
+    height: 326px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.slot_name {
+    font-weight: bold;
+    padding: 15px;
+    background-color: rgb(112, 112, 112);
+}
+
+.gallery_scroll {
+    overflow: scroll;
+    overflow-Y: hidden;
+}
+
+.right_stretch {
+    width: max-content;
+}
+
+.entry  {
+    display: inline-block;
+    padding: 20px;
+}
+
+.entry:hover {
+    background-color: rgb(80, 80, 80);
+    transition: background-color 0.15s linear 0s;
+}
+
+.entry:hover figcaption,
+.entry:focus-within figcaption,
+.entry:focus figcaption {
+    color: white;
+    text-decoration: underline white;
+    transition: text-decoration 0.15s linear;
+}
+
+.entry img {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    width: auto;
+    bottom: 0;
+    text-align: center;
+    font-family: sans-serif;
+}

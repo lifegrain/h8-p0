@@ -1,0 +1,129 @@
+/* Universal style */
+* {
+    margin:0;
+    padding: 0;
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: rgb(77, 77, 77);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#nav {
+    margin: 15px 50px 0;
+}
+
+#nav li{
+    display: inline-block;
+    margin: 0 50px;
+    width: 10em;
+    text-align: center;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+}
+
+li.nav{
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 3;
+}
+
+.nav {
+    background-color: rgb(190, 190, 190);
+    margin: 0 auto;
+}
+
+
+#recipe #cate {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    width: 12em;
+    padding-top: 1em;
+    z-index: -1;
+    left: 11.5em;
+    opacity: 0;
+    transform: translateY(-100%);
+    top: 100%;
+    transition: all 0.3s ease-in 0s, transform 0.4s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0.01s linear 0s;
+}
+
+#recipe:focus-within #cate,
+#recipe:focus #cate,
+#recipe:hover #cate {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(-2%);
+    background-color: rgb(119, 119, 119);
+}
+
+#cate li{
+    display: inline-block;
+    line-height: 2em;
+    margin: 0;
+    color: floralwhite;
+    transition: background-color 0.25s linear 0s;
+}
+
+#cate li:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+/* content */
+.body {
+    padding-top: 120px;
+    padding-bottom: 10em;
+    background-color: rgb(230, 230, 230);
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(150, 150, 150);
+    bottom: 0;
+    height: 10em;
+    width: 100%;
+}
+
+footer div {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px
+}
+
+footer div div{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 8em;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#contacts {
+    display: inline-block;
+    line-height: 1.3em;
+    vertical-align: top;
+    line-height: 2.5em;
+}
+
+#recipe-sitemap {
+    line-height: 1.45em;
+}

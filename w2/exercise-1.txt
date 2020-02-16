@@ -1,0 +1,45 @@
+1. Newton Second Law
+
+mass = 600
+acceleration = 2
+newton = Mass * Acceleration
+WRITE newton
+
+
+2. Tahun Kabisat
+
+READ year
+IF year % 4 = 0
+	IF year % 100 <> 0
+		WRITE "tahun adalah tahun kabisat"
+	else
+		WRITE "tahun bukan tahun kabisat"
+	ENDIF
+ELSE
+	WRITE "tahun bukan tahun kabisat"
+ENDIF
+
+
+3. Laundry Day
+
+clothes = 20
+count = 1
+WHILE clothes > 0
+	WRITE count " pakaian telah dimasukkan ke mesin cuci"
+	clothes = clothes - 1
+	count = count + 1
+ENDWHILE
+WRITE "Semua pakaian telah dimasukan ke mesin cuci"
+
+4. Periksa Kuku
+
+READ kukupanjang[40]
+murid = 1
+WHILE murid > 0
+	IF kukupanjang[murid] = true
+		WRITE "Hukum Murid" murid
+	else
+		WRITE "Puji Murid" murid
+	ENDIF
+ENDWHILE
+WRITE "Semua Kuku Murid telah selesai diperiksa"

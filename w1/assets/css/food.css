@@ -1,0 +1,60 @@
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top {
+    height: 20em;
+    margin-bottom: 5em;
+}
+
+.img {
+    float: left;
+    width: 35em;
+    margin-right: 25px;
+}
+
+.img img{
+    max-width: 100%;
+}
+
+.info {
+    display: inline;
+}
+
+.info h1 {
+    border: solid;
+    border-width: 0 0 1px;
+    margin-bottom: 30px;
+}
+
+.recipe {
+    font-family: sans-serif;
+}
+
+.time {
+    border: solid;
+    border-width: 0 0 1px;
+}
+
+.ingredients {
+    border: solid;
+    border-width: 0 0 1px;
+}
+
+.ingredients ul {
+    display: inline-block;
+    line-height: 2em;
+    padding: 50px;
+    vertical-align: top;
+}
+
+.ingredients ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.steps ol li{
+    list-style-type: decimal;
+    padding: 15px;
+}
