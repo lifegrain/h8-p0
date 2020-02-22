@@ -1,0 +1,50 @@
+body {
+    background-color: hsl(240, 18%, 10%);
+    font-family: sans-serif;
+    color: white;
+}
+
+#title {
+    width: fit-content;
+    max-height: 1em;
+    margin: 10% auto;
+    font-size: 5em;
+}
+
+#butbox {
+    width: 85%;
+    margin: auto;
+    font-size: 3em;
+}
+
+.button {
+    width: 45%;
+    padding: 0.5em;
+    border: 1px solid lightskyblue;
+    text-align: center;
+    display: table;
+    visibility: hidden;
+}
+
+.button:hover {
+    background-color: hsl(240, 19%, 23%);
+    transition: ease-in-out 0.1s;
+}
+
+#but1, #but3 {
+    float: left;
+}
+
+#but2, #but4 {
+    float: right;
+}
+
+#but1 {
+    width: 96%;
+    visibility: visible;
+}
+
+#score {
+    width: fit-content;
+    margin: 30% auto 0;
+}
